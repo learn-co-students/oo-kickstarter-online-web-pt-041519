@@ -4,13 +4,11 @@ class Project
   def initialize(title)
     @title = title
     @backers = []
-
   end
 
   def add_backer(backer)
-    @backers << backer
-    backer.backed_projects <<  self
-
+    @backers << backer  #accepts a Backer as an argument and stores it in a backers array
+    backer.backed_projects <<  self # adds the project to the backer's backed_projects array
   end
 
 end
