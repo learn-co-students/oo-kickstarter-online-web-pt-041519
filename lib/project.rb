@@ -10,6 +10,4 @@ attr_reader :title, :backers
     @backers << backer
     backer.backed_projects << self
   end
-
-
 end
