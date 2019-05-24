@@ -6,6 +6,8 @@ attr_reader :title, :backers
     @backers = []
   end
 
-
+  def add_backer(new_backer_name)
+    @backers << new_backer_name
+  end
 
 end
