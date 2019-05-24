@@ -8,6 +8,7 @@ attr_reader :title, :backers
 
   def add_backer(new_backer_name)
     @backers << new_backer_name
+    self.back_project(new_backer_name)
   end
 
 end
